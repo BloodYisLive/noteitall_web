@@ -47,5 +47,6 @@ body {
 @layer base {
   body {
     @apply bg-navy;
+    @apply text-textPrimary;
   }
 }

@@ -9,7 +9,7 @@ import Container from "@mui/material/Container";
 import ElevationScroll from "./components/elevation-scroll";
 import Image from "next/image";
 import Button from "../button-component";
-import Dropdown from "../dropdown-component";
+import Dropdown from "./components/dropdown-component";
 
 interface HeaderProps {
   /**
@@ -27,34 +27,35 @@ const Header: React.FC<HeaderProps> = (props) => {
       <CssBaseline />
       <ElevationScroll {...props}>
         <AppBar>
-          <Toolbar sx={{ padding: "20px 0" }} className='bg-navy'>
+          <Toolbar sx={{ padding: "0 0" }} className="bg-navy">
             <Container>
-              <div className=' w-[100%] flex justify-between items-center lg:px-8'>
+              <div className=" w-[100%] flex justify-between items-center lg:px-8">
                 <div>
                   <Image
                     src={
                       "https://genz-next.vercel.app/assets/imgs/template/logo.svg"
                     }
-                    alt='logo'
+                    alt="logo"
                     width={120}
                     height={100}
                   />
                 </div>
-                <div className='hidden lg:flex'>
-                  <Dropdown label='Home' />
+                <div className="hidden lg:flex">
+                  <Dropdown label="Home" />
                 </div>
-                <div className='flex justify-center items-center'>
-                  <div className='px-1 cursor-pointer'>
-                    <SearchIcon className='w-[28px] h-[28px] text-textPrimary' />
+                <div className="flex justify-center items-center">
+                  <div className="px-1 cursor-pointer">
+                    <SearchIcon className="w-[28px] h-[28px] text-textPrimary" />
                   </div>
-                  <div className='hidden sm:block'>
+                  <div className="hidden sm:block">
                     <Button
-                      title='Subscribe'
+                      title="Login"
                       onClick={() => console.log("I Pressed")}
+                      width={"100px"}
                     />
                   </div>
-                  <div className='px-1 cursor-pointer lg:hidden'>
-                    <MenuIcon className='w-[28px] h-[28px] text-textPrimary ' />
+                  <div className="px-1 cursor-pointer lg:hidden">
+                    <MenuIcon className="w-[28px] h-[28px] text-textPrimary " />
                   </div>
                 </div>
               </div>
@@ -63,7 +64,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         </AppBar>
       </ElevationScroll>
       <Toolbar />
-      <Container className='my-[20px]'>{children}</Container>
+      <Container className="my-[20px]">{children}</Container>
     </React.Fragment>
   );
 };
