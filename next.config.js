@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["genz-next.vercel.app"],
+    domains: ["genz-nextjs-v2.vercel.app"],
   },
 };
 

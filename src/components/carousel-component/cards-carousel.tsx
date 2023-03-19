@@ -18,12 +18,15 @@ const CardsCarousel: React.FC<CardsCarouselTypes> = (props) => {
       <div className={styles.embla__viewport} ref={emblaRef}>
         <div className={styles.embla__container}>
           {slides.map((index) => (
-            <div className={styles.embla__slide} key={index}>
+            <div
+              className={`${styles.embla__slide} flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_25%]`}
+              key={index}
+            >
               <Image
                 src={
-                  "https://genz-next.vercel.app/assets/imgs/page/homepage1/lifestyle.png"
+                  "https://genz-nextjs-v2.vercel.app/assets/imgs/page/homepage1/lifestyle.png"
                 }
-                alt="Topic Card"
+                alt='Topic Card'
                 className={styles.embla__slide__img}
                 width={0}
                 height={0}

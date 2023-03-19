@@ -32,6 +32,11 @@
   font-style: normal;
 }
 
+:root {
+  --color-primary: theme(colors.primary);
+  --color-secondary: theme(colors.secondary);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -49,4 +54,15 @@ body {
     @apply bg-navy;
     @apply text-textPrimary;
   }
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(
+    180deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 10px 0;
 }
