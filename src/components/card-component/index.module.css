@@ -1,0 +1,21 @@
+.text__underline {
+  position: relative;
+  padding-bottom: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.text__underline::before {
+  content: "";
+  background: -webkit-linear-gradient(
+    180deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  width: 70%;
+  z-index: -1;
+}

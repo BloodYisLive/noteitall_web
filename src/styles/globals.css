@@ -56,6 +56,12 @@ body {
   }
 }
 
+@layer components {
+  .section-title {
+    @apply text-2xl font-bold lg:text-5xl;
+  }
+}
+
 .gradient-text {
   background: -webkit-linear-gradient(
     180deg,
