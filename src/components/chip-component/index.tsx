@@ -1,16 +1,26 @@
 import Link from "next/link";
 import React from "react";
-
+import { Chip as MUIChip } from "@mui/material";
+import classNames from "classnames";
 interface IChip {
   label: string;
+  containerStyle?: string;
 }
 const Chip: React.FC<IChip> = (props) => {
-  const { label } = props;
+  const { label, containerStyle } = props;
+  const conStyle = classNames(containerStyle);
   return (
     <Link href={""}>
-      <div className='px-4 py-[6px] mr-2 mb-2 rounded-full text-center text-sm text-white bg-borderColor cursor-pointer'>
-        {label}
-      </div>
+      <MUIChip
+        className={`bg-borderColor text-white text-xs px-4 py-[6px] cursor-pointer ${conStyle}`}
+        label={label}
+        sx={{
+          height: "auto",
+          "& .MuiChip-label": {
+            padding: 0,
+          },
+        }}
+      />
     </Link>
   );
 };

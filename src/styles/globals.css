@@ -60,6 +60,14 @@ body {
   .section-title {
     @apply text-2xl font-bold lg:text-5xl;
   }
+  .clamp__text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
 }
 
 .gradient-text {

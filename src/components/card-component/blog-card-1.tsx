@@ -9,7 +9,7 @@ export interface IBlogCard {
 const BlogCard: React.FC<IBlogCard> = (props) => {
   const { item } = props;
   return (
-    <div className='group rounded-lg border border-borderColor p-5 transition-all hover:-translate-y-0.5'>
+    <div className='group rounded-lg border border-borderColor bg-cardBackground p-5 transition-all hover:-translate-y-0.5'>
       <div className='relative w-[100%] h-[13rem] mb-4 cursor-pointer'>
         <Image
           // src='https://genz-nextjs-v2.vercel.app/assets/imgs/page/homepage1/news2.png'

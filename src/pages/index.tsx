@@ -4,6 +4,8 @@ import Header from "@/components/header-component";
 import React from "react";
 import { trendingData } from "@/json/trendingData";
 import RecentPostComponent from "@/components/recent-post-component";
+import { recentPosts } from "@/json/recentPosts";
+import Footer from "@/components/footer-component";
 
 const Home = () => {
   return (
@@ -12,7 +14,8 @@ const Home = () => {
         <div>
           <CarouselComponent />
           <BlogsListComponent data={trendingData} />
-          <RecentPostComponent />
+          <RecentPostComponent data={recentPosts} />
+          <Footer />
         </div>
       </Header>
     </React.Fragment>

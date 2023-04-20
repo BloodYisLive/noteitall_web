@@ -1,22 +1,7 @@
 import _ from "lodash";
 import React from "react";
 import BlogCard from "../card-component/blog-card-1";
-import styles from "./index.module.css";
-
-type Author = {
-  name: string;
-  profilePic: string;
-};
-
-export type Blog = {
-  id: string;
-  title: string;
-  readTime: number;
-  thumbnail: string;
-  tags: Array<string>;
-  uploadDate: Date;
-  author: Author;
-};
+import { Blog } from "@/types/blogs-type";
 
 export interface TrendingListComponentTypes {
   data: Array<Blog>;
