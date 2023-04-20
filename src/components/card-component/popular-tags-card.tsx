@@ -18,15 +18,15 @@ const PopularTagsCard: React.FC<IPopularTagsCard> = (props) => {
   return (
     <React.Fragment>
       {!_.isEmpty(data) ? (
-        <div className='rounded-xl border border-borderColor p-5 bg-cardBackground'>
+        <div className="rounded-xl border border-borderColor p-5 bg-cardBackground">
           <span className={`${styles.text__underline} gradient-text font-bold`}>
             Popular Tags
           </span>
-          <div className='flex flex-wrap mt-6'>
+          <div className="flex flex-wrap mt-6">
             {data.map((item, _) => {
               return (
                 <Chip
-                  containerStyle='mb-2 mr-2'
+                  containerStyle="mb-2 mr-2"
                   key={item.id}
                   label={item.label}
                 />

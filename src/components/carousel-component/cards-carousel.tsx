@@ -26,7 +26,7 @@ const CardsCarousel: React.FC<CardsCarouselTypes> = (props) => {
                 src={
                   "https://genz-nextjs-v2.vercel.app/assets/imgs/page/homepage1/lifestyle.png"
                 }
-                alt='Topic Card'
+                alt="Topic Card"
                 className={styles.embla__slide__img}
                 width={0}
                 height={0}

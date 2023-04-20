@@ -11,7 +11,7 @@ const PrimaryTextFieldComponent: React.FC<IPrimaryTextFieldComponent> = (
 ) => {
   const { icon, onChangeText, placeholder } = props;
   return (
-    <div className='flex items-center py-3 justify-start border-b-[1px] border-textPrimary'>
+    <div className="flex items-center py-3 justify-start border-b-[1px] border-textPrimary">
       {icon}
       <input
         className={styles.primary__container}

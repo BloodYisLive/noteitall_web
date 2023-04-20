@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = (props) => {
         width: width,
       }}
     >
-      <span className='text-sm'>{title}</span>
+      <span className="text-sm">{title}</span>
     </div>
   );
 };
