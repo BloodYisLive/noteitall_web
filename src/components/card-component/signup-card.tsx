@@ -14,9 +14,9 @@ const PasswordIcon = ({
   return (
     <div onClick={onClick}>
       {isShow ? (
-        <VisibilityOffRoundedIcon className='cursor-pointer' />
+        <VisibilityOffRoundedIcon className="cursor-pointer" />
       ) : (
-        <RemoveRedEyeRoundedIcon className='cursor-pointer' />
+        <RemoveRedEyeRoundedIcon className="cursor-pointer" />
       )}
     </div>
   );
@@ -27,22 +27,22 @@ const SignupCard = () => {
   const [showConfirmPassword, setShowConfirmPassword] =
     useState<boolean>(false);
   return (
-    <div className='rounded-xl border border-borderColor p-7 bg-cardBackground w-[100%] max-w-[400px]'>
+    <div className="rounded-xl border border-borderColor p-7 bg-cardBackground w-[100%] max-w-[400px]">
       <SecondaryTextFieldComponent
-        containerStyle='w-[100%] mb-6'
-        placeholder='Full name'
+        containerStyle="w-[100%] mb-6"
+        placeholder="Full name"
       />
       <SecondaryTextFieldComponent
-        containerStyle='w-[100%] mb-6'
-        placeholder='Email'
+        containerStyle="w-[100%] mb-6"
+        placeholder="Email"
       />
       <SecondaryTextFieldComponent
-        containerStyle='w-[100%] mb-6'
-        placeholder='User name'
+        containerStyle="w-[100%] mb-6"
+        placeholder="User name"
       />
       <SecondaryTextFieldComponent
-        containerStyle='w-[100%] mb-6'
-        placeholder='Password'
+        containerStyle="w-[100%] mb-6"
+        placeholder="Password"
         type={!showPassword ? "password" : "text"}
         icon={
           <PasswordIcon
@@ -52,8 +52,8 @@ const SignupCard = () => {
         }
       />
       <SecondaryTextFieldComponent
-        containerStyle='w-[100%] mb-6'
-        placeholder='Confirm Password'
+        containerStyle="w-[100%] mb-6"
+        placeholder="Confirm Password"
         type={!showConfirmPassword ? "password" : "text"}
         icon={
           <PasswordIcon
@@ -62,11 +62,11 @@ const SignupCard = () => {
           />
         }
       />
-      <Button title='Create an account' onClick={() => {}} />
-      <div className='mt-6'>
-        <span className='text-sm'>
+      <Button title="Create an account" onClick={() => {}} />
+      <div className="mt-6">
+        <span className="text-sm">
           Already have an account?{" "}
-          <span className='text-primary cursor-pointer'>Sign In</span>
+          <span className="text-primary cursor-pointer">Sign In</span>
         </span>
       </div>
     </div>

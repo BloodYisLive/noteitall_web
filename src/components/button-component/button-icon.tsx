@@ -14,7 +14,7 @@ const ButtonWithIcon: React.FC<IButtonWithIcon> = (props) => {
       className={`flex items-center justify-center p-2 rounded-xl border border-borderColor bg-cardBackground cursor-pointer transition-transform hover:-translate-y-1 ${conStyle}`}
     >
       {icon}
-      <span className='ml-2'>{title}</span>
+      <span className="ml-2">{title}</span>
     </div>
   );
 };
