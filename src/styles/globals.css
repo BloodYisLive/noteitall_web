@@ -58,7 +58,7 @@ body {
 
 @layer components {
   .section-title {
-    @apply text-2xl font-bold lg:text-5xl;
+    @apply text-2xl md:text-3xl lg:text-5xl font-bold;
   }
   .clamp__text {
     overflow: hidden;
